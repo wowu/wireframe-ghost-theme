@@ -1,0 +1,30 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+
+{{!-- The big featured header --}}
+
+<header class="main-header">
+	<a href="" class="blog-name-link">
+		<div class="blog-name-box">
+			{{@blog.title}}
+		</div>
+	</a> 
+
+	{{#if @blog.navigation}}
+		{{!-- The blog navigation links --}}
+		{{navigation}}
+	{{/if}}
+</header>
+
+
+
+{{!-- {{@blog.description}} --}}
+
+{{!-- The main content area on the homepage --}}
+<main id="content" class="content" role="main">
+
+    {{!-- The tag below includes the post loop - partials/loop.hbs --}}
+    {{> "loop"}}
+
+
+</main>

@@ -1,0 +1,39 @@
+{{!-- Previous/next page links - only displayed on page 2+ --}}
+{{!--<div class="extra-pagination inner">
+    {{pagination}}
+</div>
+
+<footer class="post-meta">
+    {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
+    {{author}}
+    {{tags prefix=" on "}}
+    <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+</footer>
+
+--}}
+
+{{!-- This is the post loop - each post will be output using this markup --}}
+{{#foreach posts}}
+<article class="{{post_class}}">
+    {{#if image}}
+    <a href="{{url}}">
+        <div class="post-image" style="background-image: url({{image}})"></div>
+    </a>
+    {{/if}}
+
+    <header class="post-header">
+        <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>{{excerpt words="100"}}</p>
+
+        <a class="read-more" href="{{url}}">More</a>
+    </section>
+</article>
+
+<div class="post-divider"></div>
+
+{{/foreach}}
+
+{{!-- Previous/next page links - displayed on every page --}}
+{{pagination}}

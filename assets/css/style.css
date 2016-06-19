@@ -1,0 +1,237 @@
+/**
+ *
+ * Summary:
+ *
+ *	0. HEADER
+ *  	- 0.1. NAME
+ *  	- 0.2. NAVIGATION
+ *	1. POST
+ *		- 1.1. SHORT
+ *		- 1.2. LONG
+ *	2. FOOTER
+ * 		- 2.1. PAGINATION
+ * 		- 2.1. MAIN FOOTER
+ */
+
+/* ==========================================================================
+   0. HEADER
+   ========================================================================== */
+
+/* 0.1. NAME
+   ========================================================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+.site-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header.main-header {
+	height: 460px;
+	overflow: hidden;
+}
+
+.blog-name-box {
+	text-transform: uppercase;
+	max-width: 470px;
+	border: 3px solid black;
+	margin: 150px auto;
+	margin-bottom: 50px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+	text-align: center;
+	padding: 40px 0;
+}
+
+a.blog-name-link {
+	color: initial;
+	text-decoration: none;
+}
+
+
+
+/* 0.2. NAVIGATION
+   ========================================================================== */
+
+header.main-header .nav ul {
+	padding: 0;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+header.main-header .nav ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+header.main-header .nav ul li a {
+	color: initial;
+	text-decoration: none;
+	padding: 0 20px;
+	/* TODO: add hover effect */
+}
+
+
+/* ==========================================================================
+   1. POST
+   ========================================================================== */
+
+/* 1.1. SHORT
+   ========================================================================== */
+
+.content article.post {
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.content article h2.post-title a,
+.content article h1.post-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 42px;
+	color: initial;
+	text-decoration: none;
+	display: block;
+}
+
+.content article .post-excerpt,
+.content article .post-content {
+	font-family: 'Bitter', sans-serif;
+	font-size: 14pt;
+	line-height: 28pt;
+}
+
+.read-more {
+	display: block;
+	margin: 60px auto;
+	border: 2px solid black;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	color: initial;
+	text-decoration: none;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-top: 5px;
+}
+
+.post-divider {
+	border-top: 1px dashed black;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	/* TODO: better dividers */
+}
+
+.post-image {
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	margin-top: 35px;
+	margin-bottom: 40px;
+}
+
+/* 1.1. LONG
+   ========================================================================== */
+.post-meta {
+	font-family: "Source Sans Pro", sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 19px;
+	color: #515151;
+}
+
+h1.post-title {
+	margin-top: 15px;
+}
+
+.post-meta a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.post-meta .bull {
+	padding: 0 5px;
+}
+
+.share {
+	text-align: center;
+}
+
+.share h4 {
+	font-family: "Bitter", sans-serif;
+}
+
+.share .hidden {
+	display: none;
+}
+
+.share a {
+	color: initial;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 0 10px;
+	color: #515151;
+}
+
+/* ==========================================================================
+   2. FOOTER
+   ========================================================================== */
+
+/* 2.1. PAGINATION
+   ========================================================================== */ 
+
+nav.pagination {
+	text-align: center;
+	font-family: 'Bitter', sans-serif;
+	margin: 50px auto;
+	text-transform: uppercase;
+}
+
+.newer-posts,
+.older-posts {
+	color: initial;
+	text-decoration: none;
+	/* TODO: hover effect */
+	opacity: 0;
+	cursor: default;
+}
+
+nav.pagination .visible {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.newer-posts {
+	margin-right: 30px;
+}
+
+.older-posts {
+	margin-left: 30px;
+}
+
+/* 2.2. MAIN FOOTER
+   ========================================================================== */
+
+footer.site-footer {
+	text-align: center;
+	padding: 50px 0;
+	overflow: hidden;
+	font-family: "Bitter", sans-serif;
+	text-transform: uppercase;
+}
+
+footer.site-footer a {
+	color: initial;
+	text-decoration: none;
+	/* TODO: add hover */
+}
+
