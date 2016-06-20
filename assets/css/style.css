@@ -74,10 +74,19 @@ header.main-header .nav ul li {
 header.main-header .nav ul li a {
 	color: initial;
 	text-decoration: none;
-	padding: 0 20px;
-	/* TODO: add hover effect */
+	margin: 0 20px;
+	border-bottom: 2px solid white;	
+
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
 }
 
+header.main-header .nav ul li a:hover {
+	border-bottom: 2px solid black;	
+}
 
 /* ==========================================================================
    1. POST
@@ -100,6 +109,16 @@ header.main-header .nav ul li a {
 	color: initial;
 	text-decoration: none;
 	display: block;
+
+	-webkit-transition: color 0.1s ease-in;
+	-moz-transition: color 0.1s ease-in;
+	-ms-transition: color 0.1s ease-in;
+	-o-transition: color 0.1s ease-in;
+	transition: color 0.1s ease-in;
+}
+
+.content article h2.post-title a:hover {
+	color: #235ed7;
 }
 
 .content article .post-excerpt,
