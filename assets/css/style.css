@@ -11,6 +11,7 @@
  *	2. FOOTER
  * 		- 2.1. PAGINATION
  * 		- 2.1. MAIN FOOTER
+ *	3. TAG PAGE
  */
 
 /* ==========================================================================
@@ -236,3 +237,18 @@ footer.site-footer a {
 	/* TODO: add hover */
 }
 
+
+/* ==========================================================================
+   3. TAG PAGE
+   ========================================================================== */
+
+.tag-name {
+	text-align: center;
+	font-size: 60px;
+}
+
+.tag-description {
+	text-align: center;
+	font-family: "Bitter", sans-serif;
+	font-size: 14pt;
+}
