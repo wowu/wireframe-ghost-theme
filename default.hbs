@@ -30,9 +30,21 @@
 
     <div class="site-wrapper">
 
+        <header class="main-header">
+            <a href="/" class="blog-name-link">
+                <div class="blog-name-box">
+                    {{@blog.title}}
+                </div>
+            </a> 
+
+            {{#if @blog.navigation}}
+                {{!-- The blog navigation links --}}
+                {{navigation}}
+            {{/if}}
+        </header>
+
         {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
         {{{body}}}
-
 
         {{!-- The tiny footer at the very bottom --}}
         <footer class="site-footer clearfix">

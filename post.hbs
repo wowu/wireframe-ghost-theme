@@ -5,21 +5,6 @@
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
-
-<header class="main-header">
-    <a href="/" class="blog-name-link">
-        <div class="blog-name-box">
-            {{@blog.title}}
-        </div>
-    </a> 
-
-    {{#if @blog.navigation}}
-        {{!-- The blog navigation links --}}
-        {{navigation}}
-    {{/if}}
-</header>
-
-
 <main class="content" role="main">
     <article class="{{post_class}}">
 
