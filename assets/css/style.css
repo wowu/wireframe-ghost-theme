@@ -221,7 +221,6 @@ nav.pagination {
 .older-posts {
 	color: initial;
 	text-decoration: none;
-	/* TODO: hover effect */
 	opacity: 0;
 	cursor: default;
 }
@@ -229,6 +228,17 @@ nav.pagination {
 nav.pagination .visible {
 	opacity: 1;
 	cursor: pointer;
+	border-bottom: 2px solid white;
+
+	-webkit-transition: all 0.15s ease-in;
+	-moz-transition: all 0.15s ease-in;
+	-ms-transition: all 0.15s ease-in;
+	-o-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+}
+
+nav.pagination .visible:hover {
+	border-bottom: 2px solid black;	
 }
 
 .newer-posts {
