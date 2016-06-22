@@ -2,28 +2,42 @@
  *
  * Summary:
  *
- *	0. HEADER
- *  	- 0.1. NAME
- *  	- 0.2. NAVIGATION
- *	1. POST
- *		- 1.1. SHORT
- *		- 1.2. LONG
- *	2. FOOTER
- * 		- 2.1. PAGINATION
- * 		- 2.1. MAIN FOOTER
- *	3. TAG PAGE
+ *	0. GENERAL
+ *	1. HEADER
+ *  	- 1.1. NAME
+ *  	- 1.2. NAVIGATION
+ *	2. POST
+ *		- 2.1. SHORT
+ *		- 2.2. LONG
+ *	3. FOOTER
+ * 		- 3.1. PAGINATION
+ * 		- 3.1. MAIN FOOTER
+ *	4. TAG PAGE
+ *	5. AUTHOR PAGE
  */
 
-/* ==========================================================================
-   0. HEADER
-   ========================================================================== */
 
-/* 0.1. NAME
+/* ==========================================================================
+   0. GENERAL
    ========================================================================== */
 
 * {
 	box-sizing: border-box;
 }
+
+.hidden {
+    text-indent: -9999px;
+    visibility: hidden;
+    display: none;
+}
+
+/* ==========================================================================
+   1. HEADER
+   ========================================================================== */
+
+/* 1.1. NAME
+   ========================================================================== */
+
 
 .site-wrapper {
 	max-width: 960px;
@@ -55,7 +69,7 @@ a.blog-name-link {
 
 
 
-/* 0.2. NAVIGATION
+/* 1.2. NAVIGATION
    ========================================================================== */
 
 header.main-header .nav ul {
@@ -89,10 +103,10 @@ header.main-header .nav ul li a:hover {
 }
 
 /* ==========================================================================
-   1. POST
+   2. POST
    ========================================================================== */
 
-/* 1.1. SHORT
+/* 2.1. SHORT
    ========================================================================== */
 
 .content article.post {
@@ -128,8 +142,8 @@ header.main-header .nav ul li a:hover {
 	line-height: 28pt;
 }
 
-.content article .post-excerpt a,
-.content article .post-content a {
+.content article .post-excerpt p a,
+.content article .post-content p a {
 	color: #3533DF;
 	border-bottom: 1px solid;
 	text-decoration: none;
@@ -172,11 +186,11 @@ header.main-header .nav ul li a:hover {
 	margin-bottom: 40px;
 }
 
-/* 1.1. LONG
+/* 2.1. LONG
    ========================================================================== */
 
 .post-meta {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 19px;
@@ -202,7 +216,7 @@ h1.post-title {
 }
 
 .share h4 {
-	font-family: "Bitter", sans-serif;
+	font-family: 'Bitter', sans-serif;
 }
 
 .share .hidden {
@@ -218,10 +232,10 @@ h1.post-title {
 }
 
 /* ==========================================================================
-   2. FOOTER
+   3. FOOTER
    ========================================================================== */
 
-/* 2.1. PAGINATION
+/* 3.1. PAGINATION
    ========================================================================== */ 
 
 nav.pagination {
@@ -263,14 +277,14 @@ nav.pagination .visible:hover {
 	margin-left: 30px;
 }
 
-/* 2.2. MAIN FOOTER
+/* 3.2. MAIN FOOTER
    ========================================================================== */
 
 footer.site-footer {
 	text-align: center;
 	padding: 50px 0;
 	overflow: hidden;
-	font-family: "Bitter", sans-serif;
+	font-family: 'Bitter', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -282,7 +296,7 @@ footer.site-footer a {
 
 
 /* ==========================================================================
-   3. TAG PAGE
+   4. TAG PAGE
    ========================================================================== */
 
 .tag-name {
@@ -292,6 +306,78 @@ footer.site-footer a {
 
 .tag-description {
 	text-align: center;
-	font-family: "Bitter", sans-serif;
+	font-family: 'Bitter', sans-serif;
 	font-size: 14pt;
+}
+
+/* ==========================================================================
+   5. AUTHOR PAGE
+   ========================================================================== */
+
+.author-image {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.author-image .img {
+	width: 200px;
+	height: 200px;
+	display: block;
+	overflow: hidden;
+	background-size: cover;
+	border-radius: 50%;
+	border: 2px solid black;
+}
+
+.author-title {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-size: 48px;
+	text-align: center; 
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.author-bio {
+	font-family: 'Bitter', sans-serif;
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.author-meta {
+	text-align: center;
+}
+
+.author-link a,
+.author-meta .bull,
+.author-location {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 17px;
+	color: #4d4d4d;
+	display: inline-block;
+	margin: 25px 5px;
+}
+
+.author-link a {
+	text-decoration: none;
+	border-bottom: 2px solid #4d4d4d;	
+}
+
+.author-stats {
+	width: 100%;
+	text-align: center;
+	display: block;
+	clear: both;
+	margin-top: 25px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: black;
+	font-size: 20px;
 }
