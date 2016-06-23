@@ -7,8 +7,9 @@
  *  	- 1.1. NAME
  *  	- 1.2. NAVIGATION
  *	2. POST
- *		- 2.1. SHORT
- *		- 2.2. LONG
+ *		- 2.1. GENERAL
+ *		- 2.2. SHORT
+ *		- 2.3. LONG
  *	3. FOOTER
  * 		- 3.1. PAGINATION
  * 		- 3.1. MAIN FOOTER
@@ -30,6 +31,8 @@
     visibility: hidden;
     display: none;
 }
+
+
 
 /* ==========================================================================
    1. HEADER
@@ -106,7 +109,7 @@ header.main-header .nav ul li a:hover {
    2. POST
    ========================================================================== */
 
-/* 2.1. SHORT
+/* 2.1. GENERAL
    ========================================================================== */
 
 .content article.post {
@@ -131,10 +134,6 @@ header.main-header .nav ul li a:hover {
 	transition: color 0.1s ease-in;
 }
 
-.content article h2.post-title a:hover {
-	color: #235ed7;
-}
-
 .content article .post-excerpt,
 .content article .post-content {
 	font-family: 'Bitter', sans-serif;
@@ -153,7 +152,69 @@ header.main-header .nav ul li a:hover {
 .content article .post-content mark {
 	background: #ffff80;
 	padding: 3px;
-} 
+}
+
+code, tt {
+   padding: 1px 3px;
+   font-family: Inconsolata, monospace, sans-serif;
+   font-size: 14pt;
+   white-space: pre-wrap;
+   border: #E3EDF3 1px solid;
+   background: #F7FAFB;
+   border-radius: 2px;
+   -webkit-font-feature-settings: "liga" 0;
+   -moz-font-feature-settings: "liga" 0;
+   font-feature-settings: "liga" 0;
+}
+
+pre code, pre tt {
+   font-size: inherit;
+   white-space: pre-wrap;
+   background: transparent;
+   border: none;
+   padding: 0;
+}
+
+pre {
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0 0 32px 0;
+   border: #E3EDF3 1px solid;
+   width: 100%;
+   padding: 10px;
+   font-family: Inconsolata, monospace, sans-serif;
+   font-size: 18px;
+   white-space: pre;
+   overflow: auto;
+   background: #F7FAFB;
+   border-radius: 3px;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0 0 0 32px;
+    border-left: #4A4A4A 7px solid;
+}
+
+blockquote p {
+    margin: 32px 0;
+    font-style: italic;
+}
+
+.post-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+
+
+/* 2.2. SHORT
+   ========================================================================== */
+
+.content article h2.post-title a:hover {
+	color: #235ed7;
+}
 
 .read-more {
 	display: block;
@@ -186,7 +247,7 @@ header.main-header .nav ul li a:hover {
 	margin-bottom: 40px;
 }
 
-/* 2.1. LONG
+/* 2.3. LONG
    ========================================================================== */
 
 .post-meta {
