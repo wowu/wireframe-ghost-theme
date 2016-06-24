@@ -48,7 +48,7 @@
 }
 
 header.main-header {
-	height: 460px;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -113,7 +113,7 @@ header.main-header .nav ul li a:hover {
    ========================================================================== */
 
 .content article.post {
-	margin-top: 30px;
+	margin-top: 60px;
 	overflow: hidden;
 }
 
@@ -206,6 +206,7 @@ blockquote p {
     max-width: 100%;
     height: auto;
     padding: 30px 0;
+    margin: 0 auto;
 }
 
 .post-meta {
@@ -290,11 +291,13 @@ blockquote p {
 }
 
 .post-divider {
-	border-top: 1px dashed black;
 	width: 100%;
 	position: absolute;
 	left: 0;
-	/* TODO: better dividers */
+	height: 3px;
+	background: url(../img/dot.png);
+	background-repeat: repeat-x;
+	opacity: 0.5;
 }
 
 .post-image {
