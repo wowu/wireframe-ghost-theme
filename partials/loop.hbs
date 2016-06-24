@@ -22,6 +22,21 @@
     {{/if}}
 
     <header class="post-header">
+        <section class="post-meta">
+            <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+
+            <span class="bull">&bull;</span>
+
+            {{#author}}
+                <span class="post-author">
+                    <a href="{{url}}">{{name}}</a>
+                </span>
+            {{/author}}
+            
+            <span class="tags">
+                {{tags prefix=" <span class='bull'>&bull;</span> "}}
+            </span>
+        </section>
         <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
     </header>
     <section class="post-excerpt">
