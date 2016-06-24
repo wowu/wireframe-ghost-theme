@@ -355,6 +355,21 @@ nav.pagination {
 	cursor: default;
 }
 
+.newer-posts:before,
+.older-posts:after {
+	font-size: 30px;
+	position: relative;
+	top: -1px;
+}
+
+.newer-posts:before {
+	content: "\2190";
+}
+
+.older-posts:after {
+	content: "\2192";
+}
+
 nav.pagination .visible {
 	opacity: 1;
 	cursor: pointer;
