@@ -48,8 +48,10 @@
 
         {{!-- The tiny footer at the very bottom --}}
         <footer class="site-footer clearfix">
-            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby">Wireframe Theme by <a href="https://musur.pl/">Karol Musur</a></section>
+            <section class="copyright">&copy; <a href="{{@blog.url}}">{{@blog.title}}</a> {{date format="YYYY"}}</section>
+            <section class="poweredby">
+                <a href="https://github.com/Wowu/wireframe-ghost-theme">Wireframe Theme</a> by <a href="https://musur.pl/">Karol Musur</a>
+            </section>
         </footer>
 
     </div>

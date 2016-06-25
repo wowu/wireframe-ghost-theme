@@ -414,6 +414,15 @@ footer.site-footer a {
 	/* TODO: add hover */
 }
 
+footer .poweredby {
+	font-size: 14px;
+	margin-top: 7px;
+}
+
+footer .poweredby a {
+	border-bottom: 1px solid #D6D6D6;
+}
+
 
 /* ==========================================================================
    4. TAG PAGE
