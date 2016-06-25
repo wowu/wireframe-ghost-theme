@@ -32,6 +32,9 @@
     display: none;
 }
 
+main.content {
+	padding: 0 20px;
+}
 
 
 /* ==========================================================================
@@ -48,6 +51,7 @@
 }
 
 header.main-header {
+	padding: 0 20px;
 	height: auto;
 	overflow: hidden;
 }
